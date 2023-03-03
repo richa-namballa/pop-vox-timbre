@@ -7,10 +7,8 @@ from utils import normalize_data, trim_audio, fade_in_out
 
 
 # set input and output directories
-# INPUT_DIR = "/scratch/rn2214/data/separated"
-# OUTPUT_DIR = "/scratch/rn2214/data/final_stems"
-INPUT_DIR = "/Users/richa/Desktop/thesis/data/standardized"
-OUTPUT_DIR = "/Users/richa/Desktop/thesis/data/final_stems"
+INPUT_DIR = "/scratch/rn2214/data/separated"
+OUTPUT_DIR = "/scratch/rn2214/data/final_stems"
 
 
 def postprocess(in_dir, out_dir, target_sr=22050, to_mono=False, trim_dur=20.0, normalize=False, fade=True):

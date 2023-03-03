@@ -7,10 +7,8 @@ from utils import normalize_data, fade_in_out
 
 
 # set input and output directories
-# INPUT_DIR = "/scratch/rn2214/data/choruses"
-# OUTPUT_DIR = "/scratch/rn2214/data/standardized"
-INPUT_DIR = "/Users/richa/Desktop/thesis/data/choruses"
-OUTPUT_DIR = "/Users/richa/Desktop/thesis/data/standardized"
+INPUT_DIR = "/scratch/rn2214/data/choruses"
+OUTPUT_DIR = "/scratch/rn2214/data/standardized"
 
 
 def preprocess(in_dir, out_dir, target_sr=44100, to_mono=False, normalize=False, fade=True):
