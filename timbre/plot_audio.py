@@ -14,10 +14,8 @@ matplotlib.use('Agg')
 
 
 # set input and output directories
-# INPUT_DIR = "/scratch/rn2214/data/final_stems_22050"
-# PLOT_DIR = "/scratch/rn2214/plots/spectrograms"
-INPUT_DIR = "../data/test"
-PLOT_DIR = "../plots/waveforms"
+INPUT_DIR = "/scratch/rn2214/data/final_stems_22050"
+PLOT_DIR = "/scratch/rn2214/plots/spectrograms"
 
 def plot_audio(in_dir, plot_dir):
     """
