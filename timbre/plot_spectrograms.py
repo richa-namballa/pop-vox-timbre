@@ -48,7 +48,7 @@ def plot_spectrograms(in_dir, plot_dir):
 
             # plot the mfccs
             fig, ax = plt.subplots()
-            M = librosa.feature.melspectrogram(y, sr, hop_length=HOP_LENGTH, n_fft=N_FFT)
+            M = librosa.feature.melspectrogram(y=y, sr=sr, hop_length=HOP_LENGTH, n_fft=N_FFT)
             M_db = librosa.power_to_db(M, ref=np.max)
             img = librosa.display.specshow(M_db, sr=sr, hop_length=HOP_LENGTH, y_axis='mel', x_axis='time', ax=ax)
             ax.set(title=f'Mel Spectrogram\n{s[0]} {s[1]}', xlabel='Time (seconds)')
